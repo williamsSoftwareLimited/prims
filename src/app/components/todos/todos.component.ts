@@ -7,7 +7,6 @@ import { PrimsService } from 'src/app/services/prims.service';
   styleUrls: ['./todos.component.css']
 })
 export class TodosComponent implements OnInit {
-  todos:Todo[];
   constructor(
     private primsService: PrimsService
   ) { }

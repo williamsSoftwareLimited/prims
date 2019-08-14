@@ -1,0 +1,7 @@
+<app-todoitem 
+    *ngFor='let todo of todos'
+    [todo]="todo"
+    (deleteTodo)="deleteTodo($event)">
+</app-todoitem>
+
+<button (click)='testPrims()'>Test Prims</button>

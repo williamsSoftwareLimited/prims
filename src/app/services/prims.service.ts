@@ -11,7 +11,7 @@ export class PrimsService {
   minSpanTree: Vertex[] = [];
   processTree: Vertex[] = [];
   minEdge: Edge;
-  jsonVertices: [];
+  jsonVertices;
 
   constructor(
     private verticeJsonService: VerticeJsonService
@@ -21,32 +21,32 @@ export class PrimsService {
     console.log("same again");
 
     this.jsonVertices = [
-      { "vertex": "A",
+      { "name": "A",
         "edges": [
         { "name": "B", "weight": 10 },
         { "name": "C", "weight": 5 },
         { "name": "D", "weight": 6 }
       ]},
-      { "vertex": "B",
+      { "name": "B",
         "edges": [
         { "name": "A", "weight": 10 },
         { "name": "C", "weight": 8 },
         { "name": "D", "weight": 3 },
         { "name": "E", "weight": 9 }
       ]},
-      { "vertex": "C",
+      { "name": "C",
         "edges": [
         { "name": "A", "weight": 5 },
         { "name": "B", "weight": 8 },
         { "name": "E", "weight": 7 }
       ]},
-      { "vertex": "D",
+      { "name": "D",
         "edges": [
         { "name": "A", "weight": 6 },
         { "name": "B", "weight": 3 },
         { "name": "E", "weight": 4 }
       ]},
-      { "vertex": "E",
+      { "name": "E",
         "edges": [
         { "name": "D", "weight": 4 },
         { "name": "B", "weight": 9 },
@@ -55,7 +55,7 @@ export class PrimsService {
     ];
 
     this.verticeJsonService.jsonVertices = this.jsonVertices;
-    this.verticeJsonService.checkVerticeJsonIntegrity();
+    //this.verticeJsonService.checkVerticeJsonIntegrity();
     //this.verticeJsonService.parseVerticeJson();
 
     //this.calcMinSpan();

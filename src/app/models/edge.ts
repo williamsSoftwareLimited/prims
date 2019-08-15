@@ -1,5 +1,3 @@
-import { timingSafeEqual } from 'crypto';
-
 export class Edge {
     
     name: string;

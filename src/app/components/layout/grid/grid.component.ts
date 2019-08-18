@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./grid.component.css']
 })
 export class GridComponent implements OnInit {
-
+  select;
   constructor() { }
 
   ngOnInit() {
+    this.select = () => {
+      console.log("selected");
+    }
   }
 
 }

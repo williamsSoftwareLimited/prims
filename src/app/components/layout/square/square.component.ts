@@ -14,7 +14,6 @@ export class SquareComponent implements OnInit {
   }
 
   onclick() {
-    console.log("square clicked");
     if (this.func) {
       this.func();
     }

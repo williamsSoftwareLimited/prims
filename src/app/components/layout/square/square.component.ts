@@ -7,8 +7,16 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class SquareComponent implements OnInit {
   @Input() func;
+  @Input() id;
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onclick() {
+    console.log("square clicked");
+    if (this.func) {
+      this.func();
+    }
   }
 }

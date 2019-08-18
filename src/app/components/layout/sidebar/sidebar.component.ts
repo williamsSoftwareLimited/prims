@@ -8,16 +8,17 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 export class SidebarComponent implements OnInit {
   @Output() calcNotify = new EventEmitter();
   fillSquare;
+  selected: boolean = false;
   constructor() { }
 
   ngOnInit() {
-  }
-
-  onclick() {
-    // tslint:disable-next-line:only-arrow-functions
-    this.fillSquare = function(){
-      console.log("filled the square");
+    this.fillSquare = () => {
+      if (this.selected === false) {
+        document.getElementById('fillSquareId').style.background='black';
+      } else {
+        document.getElementById('fillSquareId').style.background='white';
+      }
+      this.selected = !this.selected;
     }
   }
-
 }

@@ -1,3 +1,5 @@
 .prims-square {
     border-style: dotted;
+    width: 20px;
+    height: 20px;
 }

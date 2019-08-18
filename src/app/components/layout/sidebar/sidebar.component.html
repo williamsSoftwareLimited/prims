@@ -1,5 +1,8 @@
 <div class="prims-sidebar">
     <p>
+        <app-square [func]="fillSquare" (click)="onclick()"></app-square>
+    </p>
+    <p>
         <button (click)="calcNotify.emit()">Calc Prims</button>
     </p>
 </div>

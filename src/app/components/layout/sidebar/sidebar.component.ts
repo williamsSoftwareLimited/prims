@@ -7,12 +7,17 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
   @Output() calcNotify = new EventEmitter();
+  fillSquare;
   constructor() { }
 
   ngOnInit() {
   }
 
-  calcPrims() {
+  onclick() {
+    // tslint:disable-next-line:only-arrow-functions
+    this.fillSquare = function(){
+      console.log("filled the square");
+    }
   }
 
 }

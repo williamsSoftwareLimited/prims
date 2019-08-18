@@ -55,17 +55,16 @@ export class PrimsService {
     ];
 
     this.verticeJsonService.jsonVertices = this.jsonVertices;
-    //this.verticeJsonService.checkVerticeJsonIntegrity();
-    //this.verticeJsonService.parseVerticeJson();
+    this.verticeJsonService.checkIntegrity();
+    this.verticeJsonService.parseVerticeJson();
 
-    //this.calcMinSpan();
+    this.calcMinSpan();
 
     console.log("The MST is ");
     this.minSpanTree.forEach(vertex => {
       console.log(`${vertex.name}, ${vertex.edges[0].weight}, ${vertex.edges[0].name}`);
     });
   }
- 
   calcMinSpan() {
     this.vertex = this.verticeJsonService.vertices[0].clone();
     this.findMinEdgeInVertex();

@@ -1,3 +1,18 @@
-.is-complete{ 
-    text-decoration: line-through;
+.prims-sidebar {
+    float: left;
+    width: 20%;
 }
+.prims-grid {
+    float: left;
+    width: 80%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }

@@ -4,14 +4,18 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TodosComponent } from './components/todos/todos.component';
 import { HeaderComponent } from './components/layout/header/header.component';
+import { PrimsComponent } from './components/prims/prims.component';
+import { SidebarComponent } from './components/layout/sidebar/sidebar.component';
+import { GridComponent } from './components/layout/grid/grid.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TodosComponent,
-    HeaderComponent
+    HeaderComponent,
+    PrimsComponent,
+    SidebarComponent,
+    GridComponent
   ],
   imports: [
     BrowserModule,

@@ -1,12 +1,14 @@
 import { Component, OnInit } from '@angular/core';
+
 import { PrimsService } from 'src/app/services/prims.service';
 
 @Component({
-  selector: 'app-todos',
-  templateUrl: './todos.component.html',
-  styleUrls: ['./todos.component.css']
+  selector: 'app-prims',
+  templateUrl: './prims.component.html',
+  styleUrls: ['./prims.component.css']
 })
-export class TodosComponent implements OnInit {
+export class PrimsComponent implements OnInit {
+
   constructor(
     private primsService: PrimsService
   ) { }
@@ -14,8 +16,7 @@ export class TodosComponent implements OnInit {
   ngOnInit() {
   }
 
-
-  testPrims(){
+  onCalcNotify() {
     this.primsService.primsTest();
   }
 

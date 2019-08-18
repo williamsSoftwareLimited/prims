@@ -16,10 +16,4 @@ describe('AppComponent', () => {
     }).compileComponents();
   }));
 
-  // it(`should have as title 'prims'`, () => {
-  //   const fixture = TestBed.createComponent(AppComponent);
-  //   const app = fixture.debugElement.componentInstance;
-  //   expect(app.title).toEqual('PRIMS');
-  // });
-
 });

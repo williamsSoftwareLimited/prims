@@ -6,13 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./grid.component.css']
 })
 export class GridComponent implements OnInit {
-  select;
+  rows = [];
   constructor() { }
 
   ngOnInit() {
-    this.select = () => {
-      console.log("selected");
-    }
+    this.rows = [0,1,2,3,4,5,6,7];
   }
-
 }

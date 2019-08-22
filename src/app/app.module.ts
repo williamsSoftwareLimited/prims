@@ -9,6 +9,7 @@ import { PrimsComponent } from './components/prims/prims.component';
 import { SidebarComponent } from './components/layout/sidebar/sidebar.component';
 import { GridComponent } from './components/layout/grid/grid.component';
 import { SquareComponent } from './components/layout/square/square.component';
+import { RowComponent } from './components/layout/row/row.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { SquareComponent } from './components/layout/square/square.component';
     PrimsComponent,
     SidebarComponent,
     GridComponent,
-    SquareComponent
+    SquareComponent,
+    RowComponent
   ],
   imports: [
     BrowserModule,

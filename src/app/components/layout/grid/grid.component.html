@@ -1,4 +1,4 @@
-<div class='prims-grid'>
-    <app-square [id]="'selectedFromSquareId'" [func]='select'></app-square>
+<div class='prims-grid' *ngFor="let row of rows, index as row">
+    <app-row [rowId]="row"></app-row>
 </div>
 
